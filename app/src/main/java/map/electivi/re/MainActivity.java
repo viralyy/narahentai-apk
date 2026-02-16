@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 // Check if the URL is a Google Maps link
-                if (url.startsWith("https://narahentai.pages.dev") || url.startsWith("geo:") || url.contains("maps.app.goo.gl")) {
+                if (url.startsWith("https://maps.google.com") || url.startsWith("geo:") || url.contains("maps.app.goo.gl")) {
                     // Open Google Maps links in Google Maps app
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     startActivity(intent);
